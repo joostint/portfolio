@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(./assets/JetBrainsMono-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d2439;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 25px 10%;
+    max-width: 1200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    font-family: 'Poppins' sans-serif;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #d3ccf6;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#about{
+    padding: 55px 0;
+    color: #d3ccf6;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-top: 125px;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+    text-align: right;
+    margin-top: 25px;
+
+}
+.sub-title{
+    font-family: "Poppins" sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.about-col-2 p{
+    margin-bottom: 30px;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+    text-align: right;
+}
+
+.tab-contents ui li{
+    list-style: none;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.tab-contents ul li span{
+    color:#d3ccf6;
+    font-size: 14px;
+    text-align: right;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: -200px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.email p {
+    color: #fff;
+    font-family: 'JetBrainsMono';
+    margin: 0;
+    font-size: 16px;
+}

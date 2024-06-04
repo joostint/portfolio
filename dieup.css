@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(./assets/JetBrainsMono-Regular.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 25px 10%;
+    max-width: 1200px; /* Adjust max-width as needed */
+
+    
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 15px;
+    
+}
+
+/*----------projects----------*/
+.header-text h1 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 50px;
+}
+.header-text img {
+    max-width: 80%; 
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 35px;
+}
+
+.header-text p {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+.header-text h2 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.header-text h3 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 125px
+
+}
+
+.header-text h4 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-text h5 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px
+
+}
+
+.column {
+    width: 135px; /* Adjust width as needed */
+    float: left;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.link {
+    color: black; /* Change the color to whatever you prefer */
+    font-weight: bolder;
+}
