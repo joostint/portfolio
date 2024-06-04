@@ -118,6 +118,21 @@ nav ul li a:hover::after{
     text-align: right;
 }
 
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c7bef3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 70px;
+}
+
+.resume-button:hover {
+    background-color: rgb(155, 145, 206);
+}
+
 footer {
     padding-top: 100px;
     padding-bottom: -200px;
