@@ -26,7 +26,7 @@ body{
 }
 .container{
     padding: 25px 10%;
-    max-width: 1200px; /* Adjust max-width as needed */
+    max-width: 100%;
 
     
 }
@@ -37,67 +37,69 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 1vw;
 }
 
 nav ul li{
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1vw 2vw;
 }
 
 nav ul li a{
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.25vw;
     position: relative;
 }
 nav ul li a::after{
     content:'';
     width: 0;
-    height: 3px;
+    height: 0.25vw;
     background: #ffffff;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -0.5vw;
     transition: 0.3s;
 }
 nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 10%;
-    font-size: 15px;
-    
+    margin-top: 10vw;
+    max-width: 100%;
 }
 
 /*----------projects----------*/
 .header-text h1 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 75px;
+    font-size: 6vw;
     text-align: center;
-    margin-top: 50px;
 }
 .header-text img {
     max-width: 80%; 
     display: block;
-    margin: 0 auto; /* Centers the image horizontally */
-    margin-top: 35px;
+    margin: 11vw auto; 
+    margin-top: 1vw;
 }
 
 .header-text p {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 1.5vw;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 1vw;
 
 }
 
 .header-text h2 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: left;
 
 }
@@ -106,35 +108,35 @@ nav ul li a:hover::after{
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
-    margin: 125px
+    margin: 10vw;
 
 }
 
 .header-text h4 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 5vw;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 6vw;
 }
 
 .header-text h5 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
-    margin: 30px
+    margin: 2vw;
 
 }
 
 .column {
-    width: 135px; /* Adjust width as needed */
+    width: 5vw; 
     float: left;
-    margin-left: 130px;
-    margin-top: 50px;
+    margin-left: 11vw;
+    margin-top: 5vw;
 }
 
 .clearfix::after {
@@ -148,6 +150,6 @@ nav ul li a:hover::after{
 }
 
 .link {
-    color: #fff; /* Change the color to whatever you prefer */
+    color: #fff; 
     font-weight: bolder;
 }
