@@ -15,7 +15,7 @@
 
 /* ========== HOMEPAGE STYLES ========== */
 body {
-  background: #ccdbdc;
+  background: #e0f2ff;
   color: #fff;
 }
 
@@ -200,7 +200,7 @@ h2 span::before {
 
 /* ========== ABOUT PAGE STYLES ========== */
 body.about-page {
-  background: #ccdbdc;
+  background: #e0f2ff;
   color: #fff;
 }
 
@@ -278,7 +278,7 @@ body.about-page {
 
 /* ========== CONTACT PAGE STYLES ========== */
 body.contact-page {
-  background: #ccdbdc;
+  background: #e0f2ff;
   color: #fff;
 }
 
