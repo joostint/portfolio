@@ -202,13 +202,13 @@ h2 span::before {
 
 /* ========== ABOUT PAGE STYLES ========== */
 body.about-page {
-  background: #e0f2ff;
-  color: #fff;
+  background: #e8f5e8;
+  color: #2d5016;
 }
 
 #about {
   padding: 5vw 0;
-  color: #d3ccf6;
+  color: #4a7c59;
 }
 
 .row {
