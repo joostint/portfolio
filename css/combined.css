@@ -110,7 +110,8 @@ h2 span::before {
 }
 
 .grid-container {
-  margin-top: 13vw;
+  margin: 5vw auto 0 auto;
+  max-width: 60vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3vw;
