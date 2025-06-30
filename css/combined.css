@@ -393,6 +393,7 @@ label.fcf-label {
 
 .fcf-h3 {
   font-size: 4vw;
+  color: #2d5016;
 }
 
 .fcf-btn:hover {
@@ -403,25 +404,25 @@ label.fcf-label {
 .fcf-btn:focus,
 .fcf-btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(74, 124, 89, 0.25);
   align-content: center;
 }
 
 .fcf-btn-primary {
-  color: #fff;
-  background-color: #c7bef3;
+  color: #f0f8f0;
+  background-color: #4a7c59;
 }
 
 .fcf-btn-primary:hover {
-  color: #fff;
-  background-color: rgb(155, 145, 206);
+  color: #f0f8f0;
+  background-color: #2d5016;
 }
 
 .fcf-btn-primary:focus,
 .fcf-btn-primary.focus {
-  color: #fff;
-  background-color: #d3ccf6;
-  box-shadow: 0 0 0 0.2rem rgba(170, 163, 206, 0.5);
+  color: #f0f8f0;
+  background-color: #2d5016;
+  box-shadow: 0 0 0 0.2rem rgba(74, 124, 89, 0.5);
 }
 
 .fcf-btn-lg,
