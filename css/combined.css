@@ -229,7 +229,7 @@ body.about-page {
 
 .about-col-2 {
   flex-basis: 60%;
-  text-align: right;
+  text-align: left;
   margin-top: 2vw;
 }
 
@@ -239,7 +239,7 @@ body.about-page {
   font-weight: bold;
   color: #2d5016;
   margin-bottom: 1vw;
-  text-align: right;
+  text-align: left;
 }
 
 .about-col-2 p {
@@ -272,7 +272,7 @@ body.about-page {
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s;
-  margin-left: 61.75vw;
+  margin-left: 0;
 }
 
 .resume-button:hover {
