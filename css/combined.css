@@ -237,7 +237,7 @@ body.about-page {
   font-family: "Poppins" sans-serif;
   font-size: 4vw;
   font-weight: bold;
-  color: #fff;
+  color: #2d5016;
   margin-bottom: 1vw;
   text-align: right;
 }
@@ -245,6 +245,7 @@ body.about-page {
 .about-col-2 p {
   font-size: 1.5vw;
   margin-bottom: 5vw;
+  color: #2d5016;
 }
 
 .tab-links.active-link::after {
@@ -253,7 +254,7 @@ body.about-page {
 }
 
 .tab-contents ul li span {
-  color: #d3ccf6;
+  color: #4a7c59;
   font-size: 1vw;
   text-align: right;
 }
@@ -266,8 +267,8 @@ body.about-page {
   align-items: center;
   width: 17vw;
   height: 4vw;
-  background-color: #807899;
-  color: #fff;
+  background-color: #4a7c59;
+  color: #f0f8f0;
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s;
@@ -275,13 +276,13 @@ body.about-page {
 }
 
 .resume-button:hover {
-  background-color: #d3ccf6;
+  background-color: #2d5016;
 }
 
 /* ========== CONTACT PAGE STYLES ========== */
 body.contact-page {
-  background: #e0f2ff;
-  color: #fff;
+  background: #e8f5e8;
+  color: #2d5016;
 }
 
 #fcf-form {
