@@ -15,8 +15,8 @@
 
 /* ========== HOMEPAGE STYLES ========== */
 body {
-  background: #e0f2ff;
-  color: #fff;
+  background: #e8f5e8;
+  color: #2d5016;
 }
 
 #header {
@@ -48,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #2d5016;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-size: 1.25vw;
@@ -59,7 +59,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 0.25vw;
-  background: #d3ccf6;
+  background: #4a7c59;
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -76,12 +76,12 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-  color: #d3ccf6;
+  color: #4a7c59;
   font-size: 6vw;
 }
 
 .header-text h2 {
-  color: rgba(211, 204, 246, 0.5);
+  color: rgba(74, 124, 89, 0.6);
   font-size: 6vw;
   margin-top: -2vw;
 }
@@ -89,11 +89,12 @@ nav ul li a:hover::after {
 .header-text p {
   font-size: 1.5vw;
   font-family: "JetBrainsMono";
+  color: #2d5016;
 }
 
 .header-text h2 span {
   position: relative;
-  color: rgba(211, 204, 246, 0.5);
+  color: rgba(74, 124, 89, 0.6);
   font-size: 6vw;
   margin-top: 10px;
 }
@@ -105,7 +106,7 @@ h2 span::before {
   position: absolute;
   height: 6vw;
   width: 3px;
-  background: rgba(211, 204, 246, 0.5);
+  background: rgba(74, 124, 89, 0.6);
   transform: translateY(-45%);
 }
 
@@ -118,7 +119,7 @@ h2 span::before {
 }
 
 .grid-container h3 {
-  color: white;
+  color: #f0f8f0;
   font-size: 50px;
   font-family: "Poppins" sans-serif;
   margin-top: 10px;
@@ -128,6 +129,7 @@ h2 span::before {
   margin-top: 30px;
   font-family: "Poppins" sans-serif;
   font-weight: 400;
+  color: #f0f8f0;
 }
 
 .grid-item {
@@ -163,8 +165,8 @@ h2 span::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #343434;
-  color: white;
+  background-color: #2d5016;
+  color: #f0f8f0;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -178,19 +180,19 @@ h2 span::before {
 
 .overlay-content {
   text-align: center;
-  color: #fff;
+  color: #f0f8f0;
 }
 
 .overlay h3 {
   text-align: center;
-  color: #fff;
+  color: #f0f8f0;
   font-size: 4vw;
   line-height: 5vw;
 }
 
 .overlay p {
   text-align: center;
-  color: #fff;
+  color: #f0f8f0;
   font-size: 2vw;
 }
 
@@ -654,14 +656,14 @@ footer {
 }
 
 .social-icons a {
-  color: #fff;
+  color: #2d5016;
   text-decoration: none;
   font-size: 2vw;
   margin-right: 1vw;
 }
 
 .email p {
-  color: #fff;
+  color: #2d5016;
   font-family: "JetBrainsMono";
   margin: 0;
   font-size: 1.5vw;
