@@ -468,6 +468,22 @@ label.fcf-label {
 }
 
 /* ========== PROJECT PAGE SHARED STYLES ========== */
+.project-page-content {
+  opacity: 0;
+  animation: fadeInContent 1s ease-in-out 1.2s forwards;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .project-page .header-text h1 {
   font-family: "Poppins", sans-serif;
   font-size: 6vw;
