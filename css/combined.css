@@ -237,15 +237,6 @@ h2 span::before {
   background-color: #bb0000;
 }
 
-.grid-item {
-  position: relative;
-  width: 100%;
-  padding-top: 75%;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
 /* ========== ABOUT PAGE STYLES ========== */
 body.about-page {
   background: #e8f5e8;
