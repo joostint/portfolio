@@ -640,8 +640,7 @@ body.wander-page {
 
 /* ========== FOOTER STYLES ========== */
 footer {
-  padding-top: 10vw;
-  padding-bottom: 6vw;
+  padding: 10vw 10% 6vw 10%;
   text-align: center;
 }
 
