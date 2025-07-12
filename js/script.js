@@ -49,14 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeEffect();
 
-  // Grid item hover effects
-  document.querySelectorAll(".grid-item").forEach((item) => {
+  // Grid item hover effects and expansion animation
+  document.querySelectorAll(".grid-item").forEach((item, index) => {
     const image = item.querySelector(".hoverable");
     const title = image?.getAttribute("data-title");
     const description = image?.getAttribute("data-description");
     const overlay = item.querySelector(".overlay");
     const overlayTitle = overlay?.querySelector("h3");
     const overlayDescription = overlay?.querySelector("p");
+    const link = item.querySelector("a");
+
+    // Project color mapping
+    const projectColors = ["dieup", "noir", "rca", "wander"];
+    const projectClass = projectColors[index];
 
     if (image && overlay && overlayTitle && overlayDescription) {
       image.addEventListener("mouseover", function () {
@@ -67,6 +72,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
       image.addEventListener("mouseout", function () {
         overlay.style.opacity = 0;
+      });
+    }
+
+    // Expansion animation on click
+    if (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Get the position of the clicked item
+        const rect = item.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        // Create expansion overlay
+        const expansionOverlay = document.createElement("div");
+        expansionOverlay.className = `expansion-overlay ${projectClass}`;
+        expansionOverlay.style.left = centerX + "px";
+        expansionOverlay.style.top = centerY + "px";
+        expansionOverlay.style.transform = "translate(-50%, -50%)";
+
+        document.body.appendChild(expansionOverlay);
+
+        // Trigger animation
+        setTimeout(() => {
+          expansionOverlay.classList.add("active");
+        }, 10);
+
+        // Navigate after animation
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 800);
       });
     }
   });
