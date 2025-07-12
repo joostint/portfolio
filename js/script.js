@@ -76,34 +76,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Expansion animation on click
-    if (link) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
 
-        // Get the position of the clicked item
-        const rect = item.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
+      console.log("Grid item clicked:", projectClass);
 
-        // Create expansion overlay
-        const expansionOverlay = document.createElement("div");
-        expansionOverlay.className = `expansion-overlay ${projectClass}`;
-        expansionOverlay.style.left = centerX + "px";
-        expansionOverlay.style.top = centerY + "px";
-        expansionOverlay.style.transform = "translate(-50%, -50%)";
+      // Get the position of the clicked item
+      const rect = item.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
 
-        document.body.appendChild(expansionOverlay);
+      console.log("Click position:", centerX, centerY);
 
-        // Trigger animation
-        setTimeout(() => {
-          expansionOverlay.classList.add("active");
-        }, 10);
+      // Create expansion overlay
+      const expansionOverlay = document.createElement("div");
+      expansionOverlay.className = `expansion-overlay ${projectClass}`;
+      expansionOverlay.style.left = centerX + "px";
+      expansionOverlay.style.top = centerY + "px";
+      expansionOverlay.style.transform = "translate(-50%, -50%)";
 
-        // Navigate after animation
-        setTimeout(() => {
-          window.location.href = link.href;
-        }, 800);
-      });
-    }
+      document.body.appendChild(expansionOverlay);
+
+      console.log("Overlay created and added to body");
+
+      // Trigger animation
+      setTimeout(() => {
+        expansionOverlay.classList.add("active");
+        console.log("Animation triggered");
+      }, 50);
+
+      // Navigate after animation
+      setTimeout(() => {
+        const href = link ? link.href : `html/${projectClass}.html`;
+        console.log("Navigating to:", href);
+        window.location.href = href;
+      }, 1000);
+    });
   });
 });
