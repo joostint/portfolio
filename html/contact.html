@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
 
   <body class="contact-page">
@@ -30,8 +34,7 @@
             <form
               id="fcf-form-id"
               class="fcf-form-class"
-              method="post"
-              action="contact-form-process.php"
+              onsubmit="sendEmail(event)"
             >
               <div class="fcf-form-group">
                 <label for="Name" class="fcf-label">Name</label>
@@ -87,6 +90,44 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Initialize EmailJS
+      emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your EmailJS public key
+
+      function sendEmail(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const name = form.Name.value;
+        const email = form.Email.value;
+        const message = form.Message.value;
+
+        // For now, we'll use a simple mailto link as a fallback
+        const subject = encodeURIComponent("Contact Form Message from " + name);
+        const body = encodeURIComponent(
+          "Name: " +
+            name +
+            "\n" +
+            "Email: " +
+            email +
+            "\n\n" +
+            "Message:\n" +
+            message,
+        );
+
+        // Open default email client
+        window.location.href = `mailto:jjustintran@gmail.com?subject=${subject}&body=${body}`;
+
+        // Show success message
+        alert(
+          "Your default email client will open. Please send the email to complete your message.",
+        );
+
+        // Reset form
+        form.reset();
+      }
+    </script>
 
     <footer>
       <div class="footer-container">
