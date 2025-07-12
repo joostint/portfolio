@@ -427,8 +427,8 @@ label.fcf-label {
 
 .fcf-btn-lg,
 .fcf-btn-group-lg > .fcf-btn {
-  padding: 2vw 4vw;
-  font-size: 2vw;
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
